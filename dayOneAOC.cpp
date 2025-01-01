@@ -70,7 +70,7 @@ int main() {
 
     cout << "The runningSum is " << runningSum << endl;
     auto end = high_resolution_clock::now();
-    auto duration = duration_cast<milliseconds>(end - start);
+    auto duration = duration_cast<nanoseconds>(end - start);
     cout << "Total Running time is " << duration.count() << " miliseconds " << endl;
 
     return 0;
