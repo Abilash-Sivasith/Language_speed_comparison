@@ -39,7 +39,7 @@ int main() {
     auto start = high_resolution_clock::now();
     // auto advent_of_code_input = parseTextFile("aoc_day1.txt");
 
-    auto advent_of_code_input = parseTextFile("testing2.txt");
+    auto advent_of_code_input = parseTextFile("testing1.txt");
     if (!advent_of_code_input) {
         cerr << "Error: The file could not be openned";
         return 1;
@@ -71,7 +71,7 @@ int main() {
     cout << "The runningSum is " << runningSum << endl;
     auto end = high_resolution_clock::now();
     auto duration = duration_cast<nanoseconds>(end - start);
-    cout << "Total Running time is " << duration.count() << " miliseconds " << endl;
+    cout << "Total Running time is " << duration.count() << " nanoseconds " << endl;
 
     return 0;
 }
